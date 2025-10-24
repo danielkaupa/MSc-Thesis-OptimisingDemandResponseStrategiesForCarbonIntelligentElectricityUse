@@ -91,10 +91,10 @@ matplotlib.use(backend="Agg")
 # ────────────────────────────────────────────────────────────────────────────
 
 # Directories
-base_directory = '..'
+base_directory = os.path.join('..', '..')
 data_directory = os.path.join(base_directory, 'data')
-hitachi_directory = os.path.join(data_directory, 'hitachi_copy')
-meter_readings_directory = os.path.join(hitachi_directory,
+hitachi_data_directory = os.path.join(data_directory, 'hitachi')
+meter_readings_directory = os.path.join(hitachi_data_directory,
                                         'meter_primary_files')
 outputs_directory = os.path.join(base_directory, 'outputs')
 outputs_metrics_directory = os.path.join(outputs_directory, 'metrics')
@@ -115,7 +115,7 @@ meter_file_names = {
 }
 
 customer_filename = "customers_20250714_1401"
-customer_filepath = os.path.join(hitachi_directory,
+customer_filepath = os.path.join(hitachi_data_directory,
                                  customer_filename + ".parquet")
 
 meter_file_paths = {key: os.path.join(meter_readings_directory,

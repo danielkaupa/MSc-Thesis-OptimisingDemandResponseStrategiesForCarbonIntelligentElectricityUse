@@ -36,9 +36,9 @@ import polars as pl
 
 
 # Directories
-base_directory = os.path.join('..')
+base_directory = os.path.join('..', '..')
 data_directory = os.path.join(base_directory, 'data')
-hitachi_data_directory = os.path.join(data_directory, 'hitachi_copy')
+hitachi_data_directory = os.path.join(data_directory, 'hitachi')
 meter_readings_directory = os.path.join(hitachi_data_directory,
                                         'meter_primary_files')
 

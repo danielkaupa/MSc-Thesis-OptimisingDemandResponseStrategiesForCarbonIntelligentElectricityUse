@@ -44,9 +44,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # ─────────────────────────────────────────────────────────────────────────────
 # Setting up Directories
 # ─────────────────────────────────────────────────────────────────────────────
-base_directory = os.path.join('..')
+base_directory = os.path.join('..', '..')
 data_directory = os.path.join(base_directory, 'data')
-hitachi_data_directory = os.path.join(data_directory, 'hitachi_copy')
+hitachi_data_directory = os.path.join(data_directory, 'hitachi')
 meter_readings_directory = os.path.join(hitachi_data_directory,
                                         'meter_primary_files')
 
@@ -78,8 +78,8 @@ database_IP_off_campus = '146-169-11-239.dsi.ic.ac.uk'
 database_name = 'hitachi'  # Name of the database to connect to
 database_port = '5432'  # Default port for PostgreSQL databases
 
-database_user = 'daniel'
-database_password = 'Iamdaniel00!'
+database_user =  # insert username here
+database_password =  # insert password here
 database_IP = database_IP_off_campus
 
 
